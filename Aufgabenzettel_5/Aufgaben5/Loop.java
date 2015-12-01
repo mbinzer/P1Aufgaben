@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Loop {
+	public static void main(String[] arg) {
+		Scanner scanner = new Scanner(System.in);
+		
+		//programm start
+		String[] buchst = {"a", "b", "c", "q"};
+		boolean eingabe = false;
+
+		while (! eingabe) {
+			for(int i = 0; i < 3; i++) {
+				System.out.println("Was willst du?");
+				String input = scanner.nextLine();
+			
+				if (input.equals(buchst[i])) {
+					System.out.println(">" + buchst[i] );
+					System.out.println("Du hast " + buchst[i] + " gewaehlt.");
+					eingabe = true;
+				}
+				else if (input.equals("q")) {
+					System.out.println(">q");
+					System.out.println("Auf Wiedersehen!");
+					eingabe = true;					
+					break;
+				}
+				else {
+					eingabe = false;
+					break;
+				}
+			}
+			if (eingabe != true) {
+				System.out.println("Falsche Eingabe!");
+			}
+		}
+		
+	}
+}
+				
