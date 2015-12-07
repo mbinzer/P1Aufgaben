@@ -1,9 +1,14 @@
 public class Song {
-  String composer;
-  String title;
-  String song;
-  float duration;
 
+  private String composer;
+  private String title;
+  private double duration;
+
+  public Song (String composer, String title, double duration) {
+    this.composer = composer;
+    this.title = title;
+    this.duration = duration;
+  }
 
   public String getComposer() {
     return composer;
@@ -11,12 +16,11 @@ public class Song {
   public String getTitle() {
     return title;
   }
-  public float getDuration() {
+  public double getDuration() {
     return duration;
   }
-
-  public void toString() {
-    song = composer + " - " + title + ": " + duration + "m"; 
-  }
-
+  public String toString() {
+   String song = composer + " - " + title + ": " + duration + " min";
+   return song;
+   }
 }
