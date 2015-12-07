@@ -7,7 +7,7 @@ public class SongApp {
     Scanner scanner = new Scanner(System.in);
     String input;
     String output;
-    String alsString;
+    //String alsString;
 
     // Start App
     System.out.println("/n/t##########SongApp#########");
@@ -28,10 +28,10 @@ public class SongApp {
       System.out.print("ERROR!");
     }
 
-    alsString = song.toString();
+    //alsString = song.toString();
 
     System.out.println("Ihr Ergebnis: " + output + " !!!");
-    System.out.print(alsString);
+    //System.out.print(alsString);
 
   }
 
