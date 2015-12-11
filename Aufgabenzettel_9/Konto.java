@@ -1,6 +1,6 @@
 public class Konto {
-  private String besitzer;
-  private double guthaben;
+  protected String besitzer;
+  protected double guthaben;
 
   public double getGuthaben() {
     return guthaben;
