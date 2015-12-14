@@ -1,7 +1,12 @@
 public class Shape {
 
-  private int x;
-  private int y;
+  protected int x;
+  protected int y;
+
+  public Shape(int x, int y) {
+    this.x = x;
+    this.y = y;
+  }
 
   public int getX() {
     return x;
@@ -11,9 +16,11 @@ public class Shape {
   }
   public double getArea(double par1, double par2) {
     double area = par1 * par2;
+    return area;
   }
   public String toString() {
-    System.out.println("Fläche: ");
+    String stringTEST = "Fläche: " + getArea(2, 2);
+    return stringTEST;
   }
 
 }

@@ -4,11 +4,9 @@ public class Rectangle extends Shape {
   private int width;
 
   public Rectangle(int x, int y, int width, int height){
-    Shape shape = new Shape();
-    shape.getX(x);
-    shape.getY(y);
-    height = this(height);
-    width = this(width);
+    super(x, y);
+    this.height = height;
+    this.width = width;
   }
   public double getArea(double height, double width) {
     double area = height * width;
@@ -16,7 +14,9 @@ public class Rectangle extends Shape {
   }
 
   public String toString() {
-    
+    String stringTEST = "WAT?";
+    return stringTEST;
+
   }
 
 }
